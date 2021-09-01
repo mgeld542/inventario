@@ -1,3 +1,5 @@
+## Descripción
+
 El programa es una pagina web para el manejo del inventario de productos, cada producto esta asociado a un rubro, una persona, una ubicación y una especie (ejemplo: CPU)
 
 **Funcionalidades realizadas:**
