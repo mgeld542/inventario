@@ -1,3 +1,5 @@
+El programa es una pagina web para el manejo del inventario de productos, cada producto esta asociado a un rubro, una persona, una ubicación y una especie (ejemplo: CPU)
+
 **Funcionalidades realizadas:**
 
 Agregar elementos a cualquier categoría (rubro, persona, ubicación y especie)
@@ -22,7 +24,10 @@ Buscar productos dado un numero de identificación o un rango de numeros
 
 **Organización de carpetas del proyecto**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9fca7a23-a047-4a1e-9495-194c3d433d0d/Untitled.png)
+![image](https://user-images.githubusercontent.com/89826382/131717538-a03d26fd-95aa-4503-95d1-facf6e6ebf0a.png)
+![image](https://user-images.githubusercontent.com/89826382/131717675-497423a6-b9ed-4869-8e10-34bef4675e42.png)
+
+
 
 **Carpetas:**
 
@@ -56,7 +61,7 @@ Buscar productos dado un numero de identificación o un rango de numeros
     - **index.js:** archivo encargado de la configuración y la ejecución del servidor.
     - **key.js:** archivo con las claves de conexión a la base de datos
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fd24bd0-33fa-4d33-a487-daf434934aaf/Untitled.png)
+
 
 ## Configurar base de datos
 
@@ -66,11 +71,12 @@ En este caso usaré Mariadb
 - Al momento de instalarlo se le pedirá una contraseña para el usuario "root"
 - Buscar un programa llamado MySQL Client (MariaDB)
 
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5eb892a0-d5b4-45d9-be14-6164cb279094/Untitled.jpeg)
+    ![image](https://user-images.githubusercontent.com/89826382/131717074-cdcdfe14-a1a8-44df-b5a5-fbc9a6e093fa.png)
+
 
     - Ingresar la contraseña, luego aparecerá:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdac0e8a-2d95-4283-9cf3-75d4c172de4b/Untitled.jpeg)
+![image](https://user-images.githubusercontent.com/89826382/131717146-cf90d20f-775a-4cfa-9776-e6ccf907141a.png)
 
 Aquí debe ingresar los siguientes comandos:
 
@@ -81,7 +87,8 @@ USE INSUCO;
 
 Debería salir algo así:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f39e7ed6-6870-481f-9cfc-52285edb294f/Untitled.png)
+
+![image](https://user-images.githubusercontent.com/89826382/131717193-792dc756-6545-4c4f-8f9f-8838bf217655.png)
 
 Luego ingresar los datos del archivo tabla.sql de la carpeta SQL
 
@@ -108,8 +115,7 @@ Para esto debe ejecutar
 cd inventario
 npm install
 ```
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b411d8ed-5c7c-4896-b78a-fb28ebce45cd/Untitled.png)
+![image](https://user-images.githubusercontent.com/89826382/131717265-fba24a92-e0eb-42a5-a2a5-7b6e02f428d0.png)
 
 Luego debe cambiar los valores del archivo **keys.js**
 
@@ -121,11 +127,11 @@ Luego debe ingresar en la consola:
 ```bash
 npm run dev
 ```
+![image](https://user-images.githubusercontent.com/89826382/131717294-8c6ee6ce-18f3-4e20-92a2-406acc4f1b01.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fba36b6f-ea75-4792-8cbf-245a01c7119c/Untitled.png)
 
 Luego debe ingresar en un navegador a [http://localhost:5001/](http://localhost:5001/) donde le debe salir algo como esto:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a52d7b8-c9a9-4883-bb91-bc666784af56/Untitled.png)
+![image](https://user-images.githubusercontent.com/89826382/131717338-18ca1449-d7f0-48b7-a2f6-f70d4f6a53cc.png)
 
 Cualquier cambio realizado en los archivos debería reflejarse al momento de guardar los cambios, (Gracias al modulo de desarrollo nodemon)
